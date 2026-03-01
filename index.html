@@ -160,6 +160,12 @@ As an Amazon Associate I earn from qualifying purchases.
 </div>
 
 </div>
-
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js")
+    .then(() => console.log("App ready"))
+    .catch(err => console.log(err));
+}
+</script>
 </body>
 </html>
